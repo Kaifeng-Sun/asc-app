@@ -1,5 +1,4 @@
 import { NextPage } from "next";
-// import {getStaticeProps} from './api/getPosts'
 import { stringify } from "querystring";
 import { gql } from "@apollo/client";
 import { client } from "@/lib/apollo";
