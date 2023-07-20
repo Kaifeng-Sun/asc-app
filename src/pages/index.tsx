@@ -1,5 +1,3 @@
-import { NextPage } from "next";
-import { stringify } from "querystring";
 import { gql } from "@apollo/client";
 import { client } from "@/lib/apollo";
 import Link from "next/link";
