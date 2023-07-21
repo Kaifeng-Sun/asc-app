@@ -1,93 +1,93 @@
 import { ChevronDownIcon } from "@chakra-ui/icons";
-import {
-  Box,
-  Button,
-  Center,
-  Flex,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-} from "@chakra-ui/react";
+import { Box, Center, Flex } from "@chakra-ui/react";
+import Link from "next/link";
+
+import NavigationItem from "./NavigationItem";
+
+interface MenuListItem {
+  order: number;
+  title: string;
+  subList: string[];
+}
+export const menuListItems: MenuListItem[] = [
+  {
+    order: 0,
+    title: "ABOUT AISA",
+    subList: [
+      "OUR VISION & MISSION",
+      "OUR ETHICS & PURPOSE",
+      "OUR HISTORY",
+      "OUR GOVERNANCE & STRUCTURE",
+      "CONSTITUTION EXTRACT",
+      "FULL CONSTITUTION",
+    ],
+  },
+  {
+    order: 1,
+    title: "GET INVOLVED",
+    subList: [
+      "AN ORGANISATION FOR SENIORS AND EVERYONE",
+      "HOW TO JOIN",
+      "FUNDRAIDING",
+      "DONATIONS",
+      "VOLUNTEERING",
+    ],
+  },
+  {
+    order: 2,
+    title: "OUR IMPACT",
+    subList: ["HEALTH", "FITNESS", "THE ENVIRONMENT"],
+  },
+  {
+    order: 3,
+    title: "OUR PROGRAMS",
+    subList: [
+      "BAITHAK",
+      "BRIDGE",
+      "BADMINTON",
+      "TABLE TENNIS",
+      "PICNICS & TRIPS",
+      "CULTURAL FUNCTIONS",
+      "VOLLEYBALL",
+      "WOMEN's FORUM",
+      "HEALTH SEMINARS",
+      "INTRODUCTION TO PROGRAMS",
+    ],
+  },
+  {
+    order: 4,
+    title: "NEWS AND FEATURES",
+    subList: [
+      "NEWS",
+      "OUR STORIES",
+      "AWARDS AND RECOGNITION",
+      "USEFUL CONTENT",
+    ],
+  },
+  {
+    order: 5,
+    title: "KEEP IN TOUCH",
+    subList: ["FEEDBACK", "NEW IDEAS / SUGGESTIONS", "CONTACT US"],
+  },
+];
 
 const NavigationBar = () => {
   return (
     <>
+      <Box>
+        <Link href="/login">Log in</Link>
+      </Box>
+
       <Box height="80px" backgroundColor={"grey"}>
-        <Center>LOGO</Center>
+        <Center>
+          <Link href="./"><img src='../../assets/aisalogo.png'/></Link>
+        </Center>
       </Box>
 
       <Flex justify={"space-between"}>
-          <Menu>
-            <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-              About
-            </MenuButton>
-            <MenuList>
-              <MenuItem>OUR VISION</MenuItem>
-              <MenuItem>OUR ETHICS & PURPOSE</MenuItem>
-              <MenuItem>OUR HISTORY</MenuItem>
-              <MenuItem>OUR GOVERNANCE & STRUCTURE</MenuItem>
-            </MenuList>
-          </Menu>
-
-          <Menu>
-            <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-              GET INVOLVED
-            </MenuButton>
-            <MenuList>
-              <MenuItem>AN ORGANISATION FOR SENIORS AND EVERYONE</MenuItem>    
-              <MenuItem>HOW TO JOIN</MenuItem>
-              <MenuItem>FUNDRAIDING</MenuItem>
-              <MenuItem>DONATIONS</MenuItem>
-            
-            </MenuList>
-          </Menu>
-
-          <Menu>
-            <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-              OUR IMPACT
-            </MenuButton>
-            <MenuList>
-              <MenuItem>HEALTH</MenuItem>
-              <MenuItem>FITNESS</MenuItem>
-              <MenuItem>THE ENVIRONMENT</MenuItem>
-            </MenuList>
-          </Menu>
-
-          <Menu>
-            <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-              OUR PROGRAMS
-            </MenuButton>
-            <MenuList>
-              <MenuItem>BAITLTH</MenuItem>
-              <MenuItem>BRIDGE</MenuItem>
-              <MenuItem>BADMINTON</MenuItem>
-              <MenuItem>TABLE TENNIS</MenuItem>
-              <MenuItem>PICNICS</MenuItem>
-            </MenuList>
-          </Menu>
-
-          <Menu>
-            <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-              NEWS AND FEATURES
-            </MenuButton>
-            <MenuList>
-              <MenuItem>NEWS</MenuItem>
-              <MenuItem>OUR STORIES</MenuItem>
-              <MenuItem>AWARDS AND RECOGNITION</MenuItem>
-              <MenuItem>NEWSLETTERS</MenuItem>
-              <MenuItem>UPCOMING EVENTS</MenuItem>
-            </MenuList>
-          </Menu>
-
-          <Menu>
-            <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-              KEEP IN TOUCH
-            </MenuButton>
-            <MenuList>
-              <MenuItem>FEEDBACK</MenuItem>
-            </MenuList>
-          </Menu>
+        {menuListItems.map((item: MenuListItem) => (
+          <NavigationItem title={item.title} subMenu={item.subList} order={item.order}/>
+        ))}
       </Flex>
     </>
   );
