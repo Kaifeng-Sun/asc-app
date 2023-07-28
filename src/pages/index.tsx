@@ -17,14 +17,13 @@ export default function Home({ posts }: HomeProps) {
   return (
     <>
       {posts.map(({ title, content, slug, date }) => {
-        return(
+        return (
           <li key={slug}>
-        <Link href={`/blog/${slug}`}>
-            [{date}] {title}
-        </Link>
-      </li>
-        )
-        
+            <Link href={`/blog/${slug}`}>
+              [{date}] {title}
+            </Link>
+          </li>
+        );
       })}
     </>
   );
