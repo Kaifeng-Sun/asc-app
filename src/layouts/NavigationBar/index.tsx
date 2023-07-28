@@ -1,7 +1,6 @@
-import { ChevronDownIcon } from "@chakra-ui/icons";
 import { Box, Center, Flex } from "@chakra-ui/react";
 import Link from "next/link";
-
+import { Image } from "@chakra-ui/next-js";
 import NavigationItem from "./NavigationItem";
 
 interface MenuListItem {
@@ -80,13 +79,13 @@ const NavigationBar = () => {
 
       <Box height="80px" backgroundColor={"grey"}>
         <Center>
-          <Link href="./"><img src='../../assets/aisalogo.png'/></Link>
+          <Link href="./"><Image src='../../assets/aisalogo.png' alt={""}/></Link>
         </Center>
       </Box>
 
       <Flex justify={"space-between"}>
-        {menuListItems.map((item: MenuListItem) => (
-          <NavigationItem title={item.title} subMenu={item.subList} order={item.order}/>
+        {menuListItems.map((item: MenuListItem, index) => (
+          <NavigationItem key={index} title={item.title} subMenu={item.subList} order={item.order}/>
         ))}
       </Flex>
     </>

@@ -20,8 +20,8 @@ const NavigationItem: React.FC<MenuProps> = ({ title, subMenu, order }) => {
         {title}
       </MenuButton>
       <MenuList>
-        {subMenu.map((item, key) => (
-          <MenuItem key={key}>{item}</MenuItem>
+        {subMenu.map((item, index) => (
+          <MenuItem key={index}>{item}</MenuItem>
         ))}
       </MenuList>
     </Menu>
