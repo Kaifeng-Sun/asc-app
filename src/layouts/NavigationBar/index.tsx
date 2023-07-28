@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Image } from "@chakra-ui/next-js";
 import NavigationItem from "./NavigationItem";
 import Logo from "../../assets/aisalogo.png"
+
 interface MenuListItem {
   order: number;
   title: string;
@@ -82,6 +83,7 @@ const NavigationBar = () => {
           <Link href="./">
             <Image src={Logo} alt={""} width={100} height={100} />
           </Link>
+
         </Center>
       </Box>
 
