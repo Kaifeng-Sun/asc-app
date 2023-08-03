@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@apollo/client": "^3.7.17",
     "@chakra-ui/icons": "^2.0.19",
     "@chakra-ui/next-js": "^2.1.4",
     "@chakra-ui/react": "^2.7.1",
@@ -29,6 +28,7 @@
     "eslint-config-next": "13.4.8",
     "framer-motion": "^10.12.18",
     "graphql": "^16.7.1",
+    "mongodb": "^5.7.0",
     "next": "13.4.8",
     "postcss": "8.4.24",
     "react": "18.2.0",
