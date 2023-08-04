@@ -14,9 +14,9 @@ export const menuListItems: MenuListItem[] = [
     title: "ABOUT AISA",
     url: "/aboutaisa",
     subList: [
-      { title: "OUR VISION & MISSION", url: "/aboutaisa" },
-      { title: "OUR ETHICS & PURPOSE", url: "" },
-      { title: "OUR HISTORY", url: "" },
+      { title: "OUR VISION & MISSION", url: "/aboutaisa/mission" },
+      { title: "OUR ETHICS & PURPOSE", url: "/aboutaisa/purpose" },
+      { title: "OUR HISTORY", url: "/aboutaisa/history" },
       { title: "OUR GOVERNANCE & STRUCTURE", url: "" },
       { title: "CONSTITUTION EXTRACT", url: "" },
       { title: "FULL CONSTITUTION", url: "" },

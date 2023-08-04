@@ -5,7 +5,6 @@ import {
   faInfoCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import axios from "../pages/api/axios";
 import "./register.css";
 import { SmallCloseIcon, CheckIcon, InfoOutlineIcon } from "@chakra-ui/icons";
 import { Box, Center } from "@chakra-ui/react";
@@ -59,34 +58,7 @@ const Register = () => {
       setErrMsg("Invalid Entry");
       return;
     }
-    try {
-      const response = await axios.post(
-        REGISTER_URL,
-        JSON.stringify({ user, pwd }),
-        {
-          headers: { "Content-Type": "application/json" },
-          withCredentials: true,
-        }
-      );
-      console.log(response?.data);
-      // console.log(response?.accessToken);
-      console.log(JSON.stringify(response));
-      setSuccess(true);
-      //clear state and controlled inputs
-      //need value attrib on inputs for this
-      setUser("");
-      setPwd("");
-      setMatchPwd("");
-    } catch (err) {
-      // if (!err?.response) {
-      //     setErrMsg('No Server Response');
-      // } else if (err.response?.status === 409) {
-      //     setErrMsg('Username Taken');
-      // } else {
-      //     setErrMsg('Registration Failed')
-      // }
-      errRef.current?.focus();
-    }
+  
   };
 
   return (
