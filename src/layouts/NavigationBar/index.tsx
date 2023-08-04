@@ -25,6 +25,7 @@ const NavigationBar = () => {
           <NavigationItem
             key={index}
             title={item.title}
+            url={item.url}
             subMenu={item.subList}
             order={item.order}
           />

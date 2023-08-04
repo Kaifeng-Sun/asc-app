@@ -1,66 +1,85 @@
 export interface MenuListItem {
   order: number;
   title: string;
-  subList: string[];
+  url: string;
+  subList: MenuListSubItem[];
+}
+export interface MenuListSubItem {
+  title: string;
+  url: string;
 }
 export const menuListItems: MenuListItem[] = [
   {
     order: 0,
     title: "ABOUT AISA",
+    url: "/aboutaisa",
     subList: [
-      "OUR VISION & MISSION",
-      "OUR ETHICS & PURPOSE",
-      "OUR HISTORY",
-      "OUR GOVERNANCE & STRUCTURE",
-      "CONSTITUTION EXTRACT",
-      "FULL CONSTITUTION",
+      { title: "OUR VISION & MISSION", url: "/aboutaisa" },
+      { title: "OUR ETHICS & PURPOSE", url: "" },
+      { title: "OUR HISTORY", url: "" },
+      { title: "OUR GOVERNANCE & STRUCTURE", url: "" },
+      { title: "CONSTITUTION EXTRACT", url: "" },
+      { title: "FULL CONSTITUTION", url: "" },
     ],
   },
   {
     order: 1,
     title: "GET INVOLVED",
+    url: "",
     subList: [
-      "AN ORGANISATION FOR SENIORS AND EVERYONE",
-      "HOW TO JOIN",
-      "FUNDRAIDING",
-      "DONATIONS",
-      "VOLUNTEERING",
+      { title: "AN ORGANISATION FOR SENIORS AND EVERYONE", url: "" },
+      { title: "HOW TO JOIN", url: "" },
+      { title: "FUNDRAIDING", url: "" },
+      { title: "DONATIONS", url: "" },
+      { title: "VOLUNTEERING", url: "" },
     ],
   },
   {
     order: 2,
     title: "OUR IMPACT",
-    subList: ["HEALTH", "FITNESS", "THE ENVIRONMENT"],
+    url: "",
+    subList: [
+      { title: "HEALTH", url: "" },
+      { title: "FITNESS", url: "" },
+      { title: "THE ENVIRONMENT", url: "" },
+    ],
   },
   {
     order: 3,
     title: "OUR PROGRAMS",
+    url: "",
     subList: [
-      "BAITHAK",
-      "BRIDGE",
-      "BADMINTON",
-      "TABLE TENNIS",
-      "PICNICS & TRIPS",
-      "CULTURAL FUNCTIONS",
-      "VOLLEYBALL",
-      "WOMEN's FORUM",
-      "HEALTH SEMINARS",
-      "INTRODUCTION TO PROGRAMS",
+      { title: "BAITHAK", url: "" },
+      { title: "BRIDGE", url: "" },
+      { title: "BADMINTON", url: "" },
+      { title: "TABLE TENNIS", url: "" },
+      { title: "PICNICS & TRIPS", url: "" },
+      { title: "CULTURAL FUNCTIONS", url: "" },
+      { title: "VOLLEYBALL", url: "" },
+      { title: "WOMEN's FORUM", url: "" },
+      { title: "HEALTH SEMINARS", url: "" },
+      { title: "INTRODUCTION TO PROGRAMS", url: "" },
     ],
   },
   {
     order: 4,
     title: "NEWS AND FEATURES",
+    url: "",
     subList: [
-      "NEWS",
-      "OUR STORIES",
-      "AWARDS AND RECOGNITION",
-      "USEFUL CONTENT",
+      { title: "NEWS", url: "" },
+      { title: "OUR STORIES", url: "" },
+      { title: "AWARDS AND RECOGNITION", url: "" },
+      { title: "USEFUL CONTENT", url: "" },
     ],
   },
   {
     order: 5,
     title: "KEEP IN TOUCH",
-    subList: ["FEEDBACK", "NEW IDEAS / SUGGESTIONS", "CONTACT US"],
+    url: "",
+    subList: [
+      { title: "FEEDBACK", url: "" },
+      { title: "NEW IDEAS / SUGGESTIONS", url: "" },
+      { title: "CONTACT US", url: "" },
+    ],
   },
 ];
