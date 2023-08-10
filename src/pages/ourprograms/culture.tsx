@@ -5,8 +5,8 @@ function Culture() {
     <>
       <div>Friendship Dinners and Cultural Events</div>
       <div>
-        Occasionally, depending upon member demand, AISA organises 'friendship
-        dinners' where members can enjoy one another's company in smaller, cosy,
+        Occasionally, depending upon member demand, AISA organises &apos;friendship
+        dinners&apos; where members can enjoy one another&apos;s company in smaller, cosy,
         settings.
       </div>
       <div>
@@ -18,7 +18,7 @@ function Culture() {
       </div>
       <div>Picnics & Trips</div>
       <div>
-        AISA's outdoor programs, such as picnics and day-trips, are important
+        AISA&apos;s outdoor programs, such as picnics and day-trips, are important
         activities that get members out of their usual routines to enjoy nature
         or stimulating outdoor activities in the company of their
         community-friends. Held between two and four times in a year, these
@@ -27,8 +27,8 @@ function Culture() {
       <div>
         Members can participate in any of these activities by contacting the
         relevant co-ordinators. Further details regarding the activities and the
-        co-ordinators are included in the attached Updated 'AISA Activities
-        Schedule'. Attach AISA Activities Schedule
+        co-ordinators are included in the attached Updated &apos;AISA Activities
+        Schedule&apos;. Attach AISA Activities Schedule
       </div>
     </>
   );
