@@ -1,6 +1,6 @@
 import React from "react";
 
-function structure() {
+function Structure() {
   return (
     <>
       <div>OUR GOVERNANCE STRUCTURE</div>
@@ -9,4 +9,4 @@ function structure() {
   );
 }
 
-export default structure;
+export default Structure;

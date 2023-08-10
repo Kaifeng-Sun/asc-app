@@ -1,6 +1,6 @@
 import React from "react";
 
-function mission() {
+function Mission() {
   return (
     <>
       <div>mission</div>
@@ -16,4 +16,4 @@ function mission() {
   );
 }
 
-export default mission;
+export default Mission;
