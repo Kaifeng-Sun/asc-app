@@ -21,10 +21,10 @@ function Special() {
         health specifically relevant for the seniors.
       </div>
       <div>
-        • AISA Women’s Forum, under trial at present and in the process of more
+        • AISA Women&apos;s Forum, under trial at present and in the process of more
         fully defined, is aimed at activities of specific interest to, and run
-        by, AISA’s women members. Currently, as part of this initiative, 'women
-        only' fitness sessions are being held every week at Brandon Park
+        by, AISA&apos;s women members. Currently, as part of this initiat&apos;ve, &apos;women
+        only&apos;apos; fitness sessions are being held every week at Brandon Park
         Community Centre.
       </div>
     </>
