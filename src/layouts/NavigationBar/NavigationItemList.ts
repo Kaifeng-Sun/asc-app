@@ -1,81 +1,81 @@
 export interface MenuListItem {
   order: number;
-  title: string;
+  label: string;
   url: string;
   subList: MenuListSubItem[];
 }
 export interface MenuListSubItem {
-  title: string;
+  label: string;
   url: string;
 }
 export const menuListItems: MenuListItem[] = [
   {
     order: 0,
-    title: "ABOUT AISA",
+    label: "ABOUT AISA",
     url: "/aboutaisa",
     subList: [
-      { title: "OUR VISION & MISSION", url: "/aboutaisa/mission" },
-      { title: "OUR ETHICS & PURPOSE", url: "/aboutaisa/purpose" },
-      { title: "OUR HISTORY", url: "/aboutaisa/history" },
-      { title: "OUR GOVERNANCE & STRUCTURE", url: "/aboutaisa/structure" },
-      { title: "CONSTITUTION EXTRACT", url: "/aboutaisa/extract" },
-      { title: "FULL CONSTITUTION", url: "/aboutaisa/constitution" },
+      { label: "OUR VISION & MISSION", url: "/aboutaisa/mission" },
+      { label: "OUR ETHICS & PURPOSE", url: "/aboutaisa/purpose" },
+      { label: "OUR HISTORY", url: "/aboutaisa/history" },
+      { label: "OUR GOVERNANCE & STRUCTURE", url: "/aboutaisa/structure" },
+      { label: "CONSTITUTION EXTRACT", url: "/aboutaisa/extract" },
+      { label: "FULL CONSTITUTION", url: "/aboutaisa/constitution" },
     ],
   },
   {
     order: 1,
-    title: "GET INVOLVED",
+    label: "GET INVOLVED",
     url: "/getinvolved",
     subList: [
-      { title: "AN ORGANISATION FOR SENIORS AND EVERYONE", url: "/getinvolved" },
-      { title: "HOW TO JOIN", url: "/getinvolved/join" },
-      { title: "FUNDRAIDING", url: "/getinvolved" },
-      { title: "DONATIONS", url: "/getinvolved" },
-      { title: "VOLUNTEERING", url: "/getinvolved" },
+      { label: "AN ORGANISATION FOR SENIORS AND EVERYONE", url: "/getinvolved" },
+      { label: "HOW TO JOIN", url: "/getinvolved/join" },
+      { label: "FUNDRAIDING", url: "/getinvolved" },
+      { label: "DONATIONS", url: "/getinvolved" },
+      { label: "VOLUNTEERING", url: "/getinvolved" },
     ],
   },
   {
     order: 2,
-    title: "OUR IMPACT",
+    label: "OUR IMPACT",
     url: "/ourimpact",
     subList: [
-      { title: "HEALTH", url: "/ourimpact" },
-      { title: "FITNESS", url: "/ourimpact" },
-      { title: "THE ENVIRONMENT", url: "/ourimpact" },
+      { label: "HEALTH", url: "/ourimpact" },
+      { label: "FITNESS", url: "/ourimpact" },
+      { label: "THE ENVIRONMENT", url: "/ourimpact" },
     ],
   },
   {
     order: 3,
-    title: "OUR PROGRAMS",
+    label: "OUR PROGRAMS",
     url: "/ourprograms",
     subList: [
-      { title: "BAITHAK", url: "/ourprograms/baithak" },
-      { title: "BRIDGE", url: "/ourprograms/bridge" },
-      { title: "BADMINTON", url: "/ourprograms/badminton" },
-      { title: "VOLLEYBALL", url: "/ourprograms/volleyball" },
-      { title: "Special-Purpose Initiatives", url: "/ourprograms/special" },
-      { title: "CULTURAL FUNCTIONS", url: "/ourprograms/culture" },
+      { label: "BAITHAK", url: "/ourprograms/baithak" },
+      { label: "BRIDGE", url: "/ourprograms/bridge" },
+      { label: "BADMINTON", url: "/ourprograms/badminton" },
+      { label: "VOLLEYBALL", url: "/ourprograms/volleyball" },
+      { label: "Special-Purpose Initiatives", url: "/ourprograms/special" },
+      { label: "CULTURAL FUNCTIONS", url: "/ourprograms/culture" },
     ],
   },
   {
     order: 4,
-    title: "NEWS AND FEATURES",
+    label: "NEWS AND FEATURES",
     url: "/news",
     subList: [
-      { title: "NEWS", url: "/news" },
-      { title: "OUR STORIES", url: "/news/stories" },
-      // { title: "AWARDS AND RECOGNITION", url: "" },
-      { title: "USEFUL CONTENT", url: "/news/content" },
+      { label: "NEWS", url: "/news" },
+      { label: "OUR STORIES", url: "/news/stories" },
+      // { label: "AWARDS AND RECOGNITION", url: "" },
+      { label: "USEFUL CONTENT", url: "/news/content" },
     ],
   },
   {
     order: 5,
-    title: "KEEP IN TOUCH",
+    label: "KEEP IN TOUCH",
     url: "/keepintouch",
     subList: [
-      { title: "FEEDBACK", url: "/keepintouch" },
-      { title: "NEW IDEAS / SUGGESTIONS", url: "" },
-      { title: "CONTACT US", url: "" },
+      { label: "FEEDBACK", url: "/keepintouch" },
+      { label: "NEW IDEAS / SUGGESTIONS", url: "" },
+      { label: "CONTACT US", url: "" },
     ],
   },
 ];

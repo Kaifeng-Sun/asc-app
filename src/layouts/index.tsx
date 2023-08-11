@@ -5,6 +5,8 @@ import { Box, Center } from "@chakra-ui/react";
 import Header from "./Header";
 import Footer from "./Footer";
 import NavigationBar from "./NavigationBar";
+import NavBar from "../components/NavigationMenu";
+import WithSubnavigation from "../components/NavigationChakra";
 
 const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
   const router = useRouter();

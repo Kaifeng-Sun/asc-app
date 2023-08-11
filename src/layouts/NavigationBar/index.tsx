@@ -4,6 +4,7 @@ import Image from 'next/image';
 import NavigationItem from "./NavigationItem";
 import Logo from "../../assets/aisalogo.png"
 import { MenuListItem, menuListItems } from "./NavigationItemList";
+import WithSubnavigation from "@/src/components/NavigationChakra";
 
 const NavigationBar = () => {
   return (
@@ -19,18 +20,18 @@ const NavigationBar = () => {
 
         </Center>
       </Box>
-
-      <Flex justify={"space-between"}>
+      <WithSubnavigation/>
+      {/* <Flex justify={"space-between"}>
         {menuListItems.map((item: MenuListItem, index) => (
           <NavigationItem
             key={index}
-            title={item.title}
+            title={item.label}
             url={item.url}
             subMenu={item.subList}
             order={item.order}
           />
         ))}
-      </Flex>
+      </Flex> */}
     </>
   );
 };

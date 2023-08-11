@@ -6,6 +6,7 @@ const Footer = () => {
   return (
     <Box
       as="footer"
+      width={"100%"}
       position="fixed"
       bottom="0"
       display="flex"
