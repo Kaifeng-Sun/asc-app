@@ -4,8 +4,6 @@ import { PAGE_NOT_FOUND } from "../constants";
 import { Box, Center } from "@chakra-ui/react";
 import Header from "./Header";
 import Footer from "./Footer";
-import NavigationBar from "./NavigationBar";
-import NavBar from "../components/NavigationMenu";
 import WithSubnavigation from "../components/NavigationChakra";
 
 const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
@@ -17,7 +15,7 @@ const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
         <>
           <Header />
           <Box as="main">
-            <NavigationBar />
+            <WithSubnavigation />
             {children}
           </Box>
           <Footer />
@@ -30,7 +28,7 @@ const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
           <Box width="80%">
             <Header />
             <Box as="main">
-              <NavigationBar />
+              <WithSubnavigation />
               {children}
             </Box>
             <Footer />
