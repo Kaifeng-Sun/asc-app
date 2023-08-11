@@ -6,6 +6,8 @@ const Footer = () => {
   return (
     <Box
       as="footer"
+      position="fixed"
+      bottom="0"
       display="flex"
       justifyContent="center"
       opacity={0.4}
