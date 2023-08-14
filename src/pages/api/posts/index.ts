@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import connect from "@/src/utils/db";
-import User from "@/src/models/User";
+import Post from "@/src/models/Post";
 
 export default async function handler(
   req: NextApiRequest,
@@ -9,8 +9,8 @@ export default async function handler(
   if (req.method === "GET") {
     try {
       await connect();
-      const users = await User.find();
-      res.status(200).json(users);
+      const posts = await Post.find();
+      res.status(200).json(posts);
     } catch (error) {
       res.status(500).json({ message: "Database error" });
     }
@@ -18,9 +18,9 @@ export default async function handler(
     try {
       await connect();
       const { title, content } = req.body;
-      const user = new User({ title, content });
-      await user.save();
-      res.status(201).json(user);
+      const post = new Post({ title, content });
+      await post.save();
+      res.status(201).json(post);
     } catch (error) {
       res.status(500).json({ message: "Database error" });
     }

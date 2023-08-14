@@ -13,7 +13,6 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
   Image,
 } from "@chakra-ui/react";
@@ -55,7 +54,7 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-        <Image alt="" width={10} height={10} src='/aisalogo.png' />   
+          <Image alt="" width={10} height={10} src="/aisalogo.png" />
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
@@ -278,7 +277,10 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: "GET INVOLVED",
     children: [
-      { label: "AN ORGANISATION FOR SENIORS AND EVERYONE", url: "/getinvolved" },
+      {
+        label: "AN ORGANISATION FOR SENIORS AND EVERYONE",
+        url: "/getinvolved",
+      },
       { label: "HOW TO JOIN", url: "/getinvolved/join" },
       { label: "FUNDRAIDING", url: "/getinvolved" },
       { label: "DONATIONS", url: "/getinvolved" },

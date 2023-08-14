@@ -1,12 +1,12 @@
 import { Box, Center } from "@chakra-ui/react";
 
-export const FooterContent = `&copy; ${new Date().getFullYear()} MyCharity. All rights reserved.`;
+export const FooterContent = `&copy; ${new Date().getFullYear()} Aisa Seniors. All rights reserved.`;
 
 const Footer = () => {
   return (
     <Box
       as="footer"
-      width={"100%"}
+      width={"80%"}
       position="fixed"
       bottom="0"
       display="flex"

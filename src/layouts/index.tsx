@@ -31,8 +31,8 @@ const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
               <WithSubnavigation />
               {children}
             </Box>
-            <Footer />
           </Box>
+          <Footer />
         </Center>
       );
   }
