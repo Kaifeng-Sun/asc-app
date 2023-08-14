@@ -2,13 +2,19 @@ import React from "react";
 import { AppProps } from "next/app";
 import { Chakra } from "../styles/Chakra";
 import Layout from "../layouts";
+import AuthProvider from "../components/AuthProvider";
 
-export default function CharityApp({ Component, pageProps }: AppProps) {
+export default function CharityApp({
+  Component,
+  pageProps,
+}: AppProps) {
   return (
-      <Chakra>
+    <Chakra>
+      {/* <AuthProvider> */}
         <Layout>
           <Component {...pageProps} />
         </Layout>
-      </Chakra>
+      {/* </AuthProvider> */}
+    </Chakra>
   );
 }
