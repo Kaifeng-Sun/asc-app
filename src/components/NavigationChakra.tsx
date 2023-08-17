@@ -14,7 +14,6 @@ import {
   PopoverContent,
   useColorModeValue,
   useDisclosure,
-  Image,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -54,7 +53,7 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Image alt="" width={10} height={10} src="/aisalogo.png" />
+          {/* <Image alt="" width={10} height={10} src="/aisalogo.png" /> */}
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
@@ -210,7 +209,7 @@ const MobileNavItem = ({ label, children, url }: NavItem) => {
       <Box
         py={2}
         as="a"
-        href={url ?? "#"}
+        href={"#"}
         justifyContent="space-between"
         alignItems="center"
         _hover={{
@@ -265,6 +264,7 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: "ABOUT AISA",
+    url: "/aboutaisa",
     children: [
       { label: "OUR VISION & MISSION", url: "/aboutaisa/mission" },
       { label: "OUR ETHICS & PURPOSE", url: "/aboutaisa/purpose" },
@@ -276,6 +276,7 @@ const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: "GET INVOLVED",
+    url: "/getinvolved",
     children: [
       {
         label: "AN ORGANISATION FOR SENIORS AND EVERYONE",
@@ -289,6 +290,7 @@ const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: "OUR IMPACT",
+    url: "/ourimpact",
     children: [
       { label: "HEALTH", url: "/ourimpact" },
       { label: "FITNESS", url: "/ourimpact" },
@@ -297,6 +299,7 @@ const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: "OUR PROGRAMS",
+    url: "/ourprograms",
     children: [
       { label: "BAITHAK", url: "/ourprograms/baithak" },
       { label: "BRIDGE", url: "/ourprograms/bridge" },
@@ -308,6 +311,7 @@ const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: "NEWS AND FEATURES",
+    url: "/news",
     children: [
       { label: "NEWS", url: "/news" },
       { label: "OUR STORIES", url: "/news/stories" },
@@ -317,6 +321,7 @@ const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: "KEEP IN TOUCH",
+    url: "/keepintouch",
     children: [
       { label: "FEEDBACK", url: "/keepintouch" },
       { label: "NEW IDEAS / SUGGESTIONS", url: "" },
