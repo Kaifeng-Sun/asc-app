@@ -1,7 +1,6 @@
 import {
   Box,
   Button,
-  ButtonGroup,
   Center,
   Flex,
   Grid,
@@ -12,14 +11,12 @@ import {
 
 import React from "react";
 
-export interface PageItem {
-  title: string;
-  content: string;
+interface Props {
+  title:string
 }
-
-function PageTitle({ title }: PageItem) {
+function PageTitle( {title}:Props ) {
   return (
-    <Box bg="#25336f" maxW="1200px" h="200px" color="white">
+    <Box bg="#25336f" h="200px" color="white" w="100%">
       <Flex>
         <Center w="500px" p="4" h="200px">
           <Text fontSize="5xl">{title}</Text>

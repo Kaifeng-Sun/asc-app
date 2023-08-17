@@ -24,24 +24,26 @@ const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
 
     default:
       return (
-        <Center>
+        <Center h="100%">
           <Box
             width={["100%", "80%"]}
             minWidth="370px"
             mx="auto"
             minHeight="100vh"
+            display="flex"
+            flexDirection="column"
             position="relative"
           >
             <Header />
-            <Box as="main">
+            <Box as="main" flex="1" h="100%">
               <Center>
                 <Image src="/headerlogo.png" h="160px" alt="Logo" />
               </Center>
               <WithSubnavigation />
               {children}
             </Box>
-            <Footer />
           </Box>
+          <Footer />
         </Center>
       );
   }
