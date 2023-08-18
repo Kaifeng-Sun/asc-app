@@ -17,6 +17,7 @@ if (!mongodbName) {
 }
 
 let cachedDb: Db;
+let clientPromise;
 
 export async function connectToDatabase() {
     if (cachedDb) {
