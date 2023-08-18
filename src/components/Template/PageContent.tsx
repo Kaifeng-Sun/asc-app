@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Center, Text, Grid, GridItem, Image } from "@chakra-ui/react";
-import { PageItem } from "./PageTitle";
 
 function PageContent({ content }: PageItem) {
   return (
