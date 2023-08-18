@@ -53,8 +53,6 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          {/* <Image alt="" width={10} height={10} src="/aisalogo.png" /> */}
-
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
@@ -81,10 +79,10 @@ export default function WithSubnavigation() {
             fontSize={"sm"}
             fontWeight={600}
             color={"white"}
-            bg={"pink.400"}
+            bg={"blue.400"}
             href={"#"}
             _hover={{
-              bg: "pink.300",
+              bg: "blue.300",
             }}
           >
             Sign Up
@@ -158,13 +156,13 @@ const DesktopSubNav = ({ label, url, subLabel }: NavItem) => {
       display={"block"}
       p={2}
       rounded={"md"}
-      _hover={{ bg: useColorModeValue("pink.50", "gray.900") }}
+      _hover={{ bg: useColorModeValue("blue.50", "gray.900") }}
     >
       <Stack direction={"row"} align={"center"}>
         <Box>
           <Text
             transition={"all .3s ease"}
-            _groupHover={{ color: "pink.400" }}
+            _groupHover={{ color: "blue.400" }}
             fontWeight={500}
           >
             {label}
@@ -180,7 +178,7 @@ const DesktopSubNav = ({ label, url, subLabel }: NavItem) => {
           align={"center"}
           flex={1}
         >
-          <Icon color={"pink.400"} w={5} h={5} as={ChevronRightIcon} />
+          <Icon color={"blue.400"} w={5} h={5} as={ChevronRightIcon} />
         </Flex>
       </Stack>
     </Box>

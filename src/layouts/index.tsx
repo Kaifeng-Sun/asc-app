@@ -24,7 +24,7 @@ const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
 
     default:
       return (
-        <Center h="100%">
+        <Box h="100hv">
           <Box
             width={["100%", "80%"]}
             minWidth="370px"
@@ -42,9 +42,10 @@ const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
               <WithSubnavigation />
               {children}
             </Box>
+            <Footer />
           </Box>
-          <Footer />
-        </Center>
+          
+        </Box>
       );
   }
 };

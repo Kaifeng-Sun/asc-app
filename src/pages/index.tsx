@@ -28,7 +28,7 @@ export default function Home({ posts }: HomeProps) {
               <Text
                 fontSize="2xl"
                 maxH={200}
-                overflowY={pageItem.content.length > 200 ? "scroll" : "auto"}
+                overflowY={"auto"}
               >
                 {pageItem.content}
               </Text>
