@@ -2,10 +2,10 @@ import type { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { MongoDBAdapter } from "@auth/mongodb-adapter";
-// import connect from "@/lib/mongodb";
+import clientPromise from "@/lib/mongodb";
 
 export const options: NextAuthOptions = {
-//   adapter: MongoDBAdapter(connect),
+  // adapter: MongoDBAdapter(clientPromise),
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_ID!,
@@ -26,9 +26,6 @@ export const options: NextAuthOptions = {
         },
       },
       async authorize(credentials) {
-        // This is where you need to retrieve user data
-        // to verify with credentials
-        // Docs: https://next-auth.js.org/configuration/providers/credentials
         const user = { id: "42", name: "Dave", password: "nextauth" };
 
         if (
