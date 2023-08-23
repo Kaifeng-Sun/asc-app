@@ -14,7 +14,7 @@ function constitution() {
                 fontSize="2xl"
                 maxH="300px"
                 overflowY={{ base: "scroll", sm: "scroll", md: "visible" }}
-              >
+              > <br/>
                   Copy attached, with restricted access.
               </Text>
             </GridItem>

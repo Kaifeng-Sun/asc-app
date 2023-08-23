@@ -276,23 +276,19 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "GET INVOLVED",
     url: "/getinvolved",
     children: [
-      {
-        label: "AN ORGANISATION FOR SENIORS AND EVERYONE",
-        url: "/getinvolved",
-      },
       { label: "HOW TO JOIN", url: "/getinvolved/join" },
-      { label: "FUNDRAIDING", url: "/getinvolved" },
-      { label: "DONATIONS", url: "/getinvolved" },
-      { label: "VOLUNTEERING", url: "/getinvolved" },
+      { label: "FUNDRAIDING", url: "/getinvolved/fund" },
+      { label: "DONATIONS", url: "/getinvolved/donation" },
+      { label: "VOLUNTEERING", url: "/getinvolved/volunteer" },
     ],
   },
   {
     label: "OUR IMPACT",
     url: "/ourimpact",
     children: [
-      { label: "HEALTH", url: "/ourimpact" },
-      { label: "FITNESS", url: "/ourimpact" },
-      { label: "THE ENVIRONMENT", url: "/ourimpact" },
+      { label: "HEALTH", url: "/ourimpact/health" },
+      { label: "FITNESS", url: "/ourimpact/fitness" },
+      { label: "THE ENVIRONMENT", url: "/ourimpact/environment" },
     ],
   },
   {
@@ -303,7 +299,7 @@ const NAV_ITEMS: Array<NavItem> = [
       { label: "BRIDGE", url: "/ourprograms/bridge" },
       { label: "BADMINTON", url: "/ourprograms/badminton" },
       { label: "VOLLEYBALL", url: "/ourprograms/volleyball" },
-      { label: "Special-Purpose Initiatives", url: "/ourprograms/special" },
+      { label: "SPECIAL-PURPOSE INITIATIVES", url: "/ourprograms/special" },
       { label: "CULTURAL FUNCTIONS", url: "/ourprograms/culture" },
     ],
   },
@@ -311,7 +307,7 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "NEWS AND FEATURES",
     url: "/news",
     children: [
-      { label: "NEWS", url: "/news" },
+      { label: "NEWS", url: "/news/news" },
       { label: "OUR STORIES", url: "/news/stories" },
       // { label: "AWARDS AND RECOGNITION", url: "" },
       { label: "USEFUL CONTENT", url: "/news/content" },
@@ -321,9 +317,9 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "KEEP IN TOUCH",
     url: "/keepintouch",
     children: [
-      { label: "FEEDBACK", url: "/keepintouch" },
-      { label: "NEW IDEAS / SUGGESTIONS", url: "" },
-      { label: "CONTACT US", url: "" },
+      { label: "FEEDBACK", url: "/keepintouch/feedback" },
+      { label: "NEW IDEAS / SUGGESTIONS", url: "/keepintouch/suggest" },
+      { label: "CONTACT US", url: "/keepintouch/contact-us" },
     ],
   },
 ];

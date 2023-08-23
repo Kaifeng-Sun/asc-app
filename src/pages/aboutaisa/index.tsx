@@ -19,7 +19,7 @@ function aboutAisa() {
                 fontSize="2xl"
                 maxH={200}
                 overflowY={pageItem.content.length > 200 ? "scroll" : "auto"}
-              >
+              > <br/>
                 {pageItem.content}
               </Text>
             </GridItem>

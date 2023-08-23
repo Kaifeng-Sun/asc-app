@@ -2,25 +2,26 @@ import PageTitle from "@/src/components/Template/PageTitle";
 import React from "react";
 import { Box, Center, Text, Grid, GridItem, Image } from "@chakra-ui/react";
 
-function Stories() {
+function Env() {
   return (
     <>
-      <PageTitle title="OUR STORIES" />
-      <Box h="200px">
+      <PageTitle title="Environment" />
+      <Box h="300px">
         <Center>
           <Grid templateColumns="repeat(2, 1fr)" gap={5}>
-            <GridItem w="200%">
+            <GridItem w="100%">
               <Text
                 fontSize="2xl"
                 maxH="300px"
                 overflowY={{ base: "scroll", sm: "scroll", md: "visible" }}
-              > <br/>
-                Attach copies of AISA NewZ Vol. 1 and Vol. 2
+              >
+                <br/>
+               
               </Text>
             </GridItem>
-            {/* <GridItem w="100%">
+            <GridItem w="100%">
               <Image alt="" src="/aisalogo.png" maxH="300px" />
-            </GridItem> */}
+            </GridItem>
           </Grid>
         </Center>
       </Box>
@@ -28,5 +29,5 @@ function Stories() {
   );
 }
 
-export default Stories;
 
+export default Env;

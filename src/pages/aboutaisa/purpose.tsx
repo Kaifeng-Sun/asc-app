@@ -14,7 +14,7 @@ function Purpose() {
                 fontSize="2xl"
                 maxH="300px"
                 overflowY={{ base: "scroll", sm: "scroll", md: "visible" }}
-              >
+              > <br/>
                 AISA’s purpose is to promote positive ageing and general welfare of
                 Indian Seniors living in Victoria, encourage active lifestyles amongst
                 them, and enhance their connectedness within the community and the
