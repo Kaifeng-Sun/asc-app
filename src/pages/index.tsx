@@ -1,10 +1,6 @@
 import Link from "next/link";
 import PageTitle from "../components/Template/PageTitle";
 import { Box, Center, Grid, GridItem, Text, Image } from "@chakra-ui/react";
-import Helmet from 'react-helmet';
-
-
-<Helmet bodyAttributes={{style: 'background-color : #f4f4f4'}}/>
 
 interface Post {
   title: string;
