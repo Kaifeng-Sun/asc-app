@@ -1,4 +1,4 @@
-import { Image } from "@chakra-ui/next-js"
+import { Image } from "@chakra-ui/react"
 import { useSession, signIn, signOut } from "next-auth/react"
 
 export default function CamperVanPage() {
@@ -22,7 +22,7 @@ export default function CamperVanPage() {
   return (
     <>
       <p>Not signed in.</p>
-      <button onClick={() => signIn("google")}>Sign in</button>
+      <button onClick={() => signIn()}>Sign in</button>
     </>
   )
 }
