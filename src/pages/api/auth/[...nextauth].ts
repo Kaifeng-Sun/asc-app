@@ -20,7 +20,6 @@ export default NextAuth({
             name: profile.name,
             email: profile.email,
             password: null,
-            userId: uuidv4(),
           };
         },
       }),
@@ -30,12 +29,12 @@ export default NextAuth({
           username: {
             label: "Username:",
             type: "text",
-            placeholder: "your-cool-username",
+            placeholder: "Enter your email",
           },
           password: {
             label: "Password:",
             type: "password",
-            placeholder: "your-awesome-password",
+            placeholder: "Enter your password",
           },
         },
         async authorize(credentials) {

@@ -135,7 +135,7 @@ export default function Footer() {
               </Text>
             </Box>
 
-            <HStack marginTop="9" spacing={{ base: "8", md: "10" }}>
+            <HStack marginTop="5" spacing={{ base: "8", md: "10" }}>
               <LinkItem href={siteConfig.profiles.email} icon={EmailIcon}>
                 Email
               </LinkItem>
@@ -168,7 +168,7 @@ export default function Footer() {
           </GridItem>
         </SimpleGrid>
 
-        <Text marginTop="20">{FooterContent} </Text>
+        <Text marginTop="5">{FooterContent} </Text>
       </Box>
     </Box>
   );

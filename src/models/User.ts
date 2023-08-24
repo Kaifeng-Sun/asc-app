@@ -2,6 +2,12 @@ import mongoose from "mongoose";
 
 const { Schema } = mongoose;
 
+export enum RoleType {
+  GUEST = "guest",
+  MEMBER = "member",
+  ADMIN = "admin",
+}
+
 const userSchema = new Schema(
   {
     firstName: {
@@ -25,10 +31,17 @@ const userSchema = new Schema(
       require: true,
     },
 
-    userId: {
+    _Id: {
       type: String,
       unique: true,
       require: true,
+    },
+
+    role: {
+      type: String,
+      require: true,
+      enum: RoleType,
+      default: RoleType.GUEST,
     },
   },
   { timestamps: true }
