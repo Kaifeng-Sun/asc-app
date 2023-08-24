@@ -16,7 +16,7 @@ function ourImpact() {
                     overflowY={{ base: "scroll", sm: "scroll", md: "visible" }}
                   >
                     <br/>
-                    Health and Fitness are the key areas of AISA's focus, which is about
+                    Health and Fitness are the key areas of AISAs &apos; focus, which is about
                     achieving a state of complete physical, mental and social well-being in
                     a person. The steps one can take to improve this feeling of well-being
                     include not only keeping physically and mentally active but also
