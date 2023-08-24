@@ -44,6 +44,7 @@
   "devDependencies": {
     "@next/bundle-analyzer": "^13.4.12",
     "@types/uuid": "^9.0.2",
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "nodemailer": "^6.9.4"
   }
 }

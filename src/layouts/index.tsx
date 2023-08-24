@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { ReactNode } from "react";
 import { PAGE_NOT_FOUND } from "../constants";
-import { Box, Center, Image } from "@chakra-ui/react";
+import { Box, Center, Image, Link } from "@chakra-ui/react";
 import Header from "./Header";
 import Footer from "./Footer";
 import WithSubnavigation from "../components/NavigationChakra";
@@ -37,7 +37,9 @@ const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
             <Header />
             <Box as="main" flex="1" h="100%">
               <Center>
+                <Link href="/">
                 <Image src="/headerlogo.png" h="160px" alt="Logo" />
+                </Link>
               </Center>
               <WithSubnavigation />
               {children}
