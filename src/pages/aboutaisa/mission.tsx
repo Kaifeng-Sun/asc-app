@@ -14,7 +14,7 @@ function Mission() {
                 fontSize="2xl"
                 maxH="300px"
                 overflowY={{ base: "scroll", sm: "scroll", md: "visible" }}
-              >
+              > <br/>
                 AISA&apos;s mission is to organise a variety of activities and
                 events that benefit members&apos; physical and mental health and
                 keep them socially engaged within the community and suitably

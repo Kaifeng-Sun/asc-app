@@ -14,7 +14,7 @@ function structureExtract() {
                 fontSize="2xl"
                 maxH="300px"
                 overflowY={{ base: "scroll", sm: "scroll", md: "visible" }}
-              >
+              > <br/>
                   In line with normal practices for an incorporated association, AISA’s
                   activities on a day-to-day basis are governed by a Management Committee,
                   which is elected by a majority vote by the members of the Association at
