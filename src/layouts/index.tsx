@@ -34,6 +34,9 @@ const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
             flexDirection="column"
             position="relative"
           >
+          <Box bg="#52a8de" h="10px" color="white" w="100%">
+          </Box>
+          
             <Header />
             <Box as="main" flex="1" h="100%">
               <Center>

@@ -23,9 +23,10 @@ function aboutAisa() {
                 {pageItem.content}
               </Text>
             </GridItem>
-            <GridItem w="100%">
+            <img src="/ladies.jpg" style = {{ marginTop: 20}} width="900" height="800" alt="Homepage" />
+            {/* <GridItem w="100%">
               <Image alt="" src="/aisalogo.png" maxH="300px" />
-            </GridItem>
+            </GridItem> */}
           </Grid>
         </Center>
       </Box>

@@ -13,7 +13,7 @@ import Link from "next/link";
 import { ElementType } from "react";
 import { SVGProps } from "react";
 
-export const FooterContent = `&copy; ${new Date().getFullYear()} Aisa Seniors. All rights reserved.`;
+export const FooterContent = `${new Date().getFullYear()} AISA Seniors. All rights reserved.`;
 
 type IconProps = SVGProps<SVGSVGElement>;
 export function EmailIcon(props: IconProps) {
@@ -120,9 +120,9 @@ function FooterLink({ href, children }: FooterLinkProps) {
 
 export default function Footer() {
   return (
-    <Box as="footer" position="relative" paddingY="10" bg="#25336f"  color="white">
-      <Box maxWidth="6xl" marginX="auto" paddingX="6">
-        <SimpleGrid columns={{ base: 4, md: 12 }} spacing="16">
+    <Box as="footer" position="relative" paddingY="6" bg="#52a8de"  color="white">
+      <Box maxWidth="7x" marginX="auto" paddingX="6">
+        <SimpleGrid columns={{ base: 4, md: 12 }} spacing="10">
           <GridItem colSpan={6}>
             <Box>
               <Heading marginBottom="6" size="lg">
@@ -161,14 +161,17 @@ export default function Footer() {
               General
             </Heading>
             <Flex direction="column" gap="4">
-              <FooterLink href="/mission">My Mission</FooterLink>
-              <FooterLink href="/story">My Story</FooterLink>
-              <FooterLink href="/family">My Family</FooterLink>
+              <FooterLink href="/mission">Our Mission</FooterLink>
+              <FooterLink href="/story">Our Story</FooterLink>
+              <FooterLink href="/family">Our Family</FooterLink>
             </Flex>
           </GridItem>
         </SimpleGrid>
 
-        <Text marginTop="20">{FooterContent} </Text>
+        <Text marginTop="20">
+                &copy; &nbsp;
+              {FooterContent} 
+        </Text>
       </Box>
     </Box>
   );

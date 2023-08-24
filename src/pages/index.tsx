@@ -1,6 +1,10 @@
 import Link from "next/link";
 import PageTitle from "../components/Template/PageTitle";
 import { Box, Center, Grid, GridItem, Text, Image } from "@chakra-ui/react";
+import Helmet from 'react-helmet';
+
+
+<Helmet bodyAttributes={{style: 'background-color : #f4f4f4'}}/>
 
 interface Post {
   title: string;
@@ -29,13 +33,15 @@ export default function Home({ posts }: HomeProps) {
                 fontSize="2xl"
                 maxH={200}
                 overflowY={"auto"}
-              >
+              ><br/>
                 {pageItem.content}
               </Text>
             </GridItem>
-            <GridItem w="100%">
+
+            <img src="/homepage.jpeg" style = {{ marginTop: 20}} width="900" height="800" alt="Homepage" />
+            {/* <GridItem w="100%">
               <Image alt="" src="/aisalogo.png" maxH="300px" />
-            </GridItem>
+            </GridItem> */}
           </Grid>
         </Center>
       </Box>

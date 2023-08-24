@@ -16,7 +16,7 @@ interface Props {
 }
 function PageTitle( {title}:Props ) {
   return (
-    <Box bg="#25336f" h="200px" color="white" w="100%">
+    <Box bg="#52a8de" h="200px" color="white" w="100%">
       <Flex>
         <Center w="500px" p="4" h="200px">
           <Text fontSize="5xl">{title}</Text>
@@ -25,12 +25,12 @@ function PageTitle( {title}:Props ) {
         <Center p="4" marginRight="80px">
           <Grid gap={4} templateRows="repeat(2, 1fr)">
             <GridItem colSpan={4} w="100%">
-              <Button bg="#25336f" color="white" border="1px">
+              <Button bg="#52a8de" color="white" border="1px">
                 Donate
               </Button>
             </GridItem>
             <GridItem colSpan={4} w="100%">
-              <Button bg="#25336f" color="white" border="1px">
+              <Button bg="#52a8de" color="white" border="1px">
                 Join Us
               </Button>
             </GridItem>
