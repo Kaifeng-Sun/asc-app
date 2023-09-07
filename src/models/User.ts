@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose, { models } from "mongoose";
 
 const { Schema } = mongoose;
 
@@ -10,14 +10,17 @@ export enum RoleType {
 
 const userSchema = new Schema(
   {
-    firstName: {
+    fullName:{
       type: String,
       require: true,
     },
 
+    firstName: {
+      type: String,
+    },
+
     lastName: {
       type: String,
-      require: true,
     },
 
     email: {
@@ -43,8 +46,15 @@ const userSchema = new Schema(
       enum: RoleType,
       default: RoleType.GUEST,
     },
+
+    emailVerified: {
+      type: Boolean,
+      default: false,
+      require: true,
+    }
   },
   { timestamps: true }
 );
 
-export default mongoose.model("User", userSchema);
+const User = models.User || mongoose.model("User", userSchema);
+export default User;

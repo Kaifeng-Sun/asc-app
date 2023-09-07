@@ -24,7 +24,7 @@ const postSchema = new Schema(
       require: true,
     },
 
-    userid: {
+    userId: {
       type: String,
       require: true,
     },
